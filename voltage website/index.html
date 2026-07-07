@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Innovoltage Digital Services</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="header">
+<div class="logo">Innovoltage <span><i class="fa-solid fa-bolt"></i></span></div>
+<nav id="nav">
+<a href="#home">Home</a>
+<a href="#services">Services</a>
+<a href="#about">About</a>
+<a href="#contact">Contact</a>
+</nav>
+<div class="menu-btn" onclick="toggleMenu()"><i class="fa fa-bars"></i></div>
+</header>
+
+<aside id="sidebar">
+<h2>Our Services</h2>
+<ul>
+<li><button class="service-link" data-service="web"><i class="fa-solid fa-globe"></i> Website Development</button></li>
+<li><button class="service-link" data-service="accounting"><i class="fa-solid fa-calculator"></i> Accounting</button></li>
+<li><button class="service-link" data-service="tax"><i class="fa-solid fa-file-invoice-dollar"></i> Tax Services</button></li>
+<li><button class="service-link" data-service="auditing"><i class="fa-solid fa-magnifying-glass-chart"></i> Auditing</button></li>
+<li><button class="service-link" data-service="excel"><i class="fa-solid fa-table"></i> Excel Solutions</button></li>
+<li><button class="service-link" data-service="cv"><i class="fa-solid fa-file-lines"></i> CV Writing</button></li>
+<li><button class="service-link" data-service="typing"><i class="fa-solid fa-keyboard"></i> Typing</button></li>
+<li><button class="service-link" data-service="powerpoint"><i class="fa-solid fa-file-powerpoint"></i> PowerPoint</button></li>
+<li><button class="service-link" data-service="design"><i class="fa-solid fa-palette"></i> Posters & Flyers</button></li>
+<li><button class="service-link" data-service="computer"><i class="fa-solid fa-laptop-code"></i> Computer Services</button></li>
+</ul>
+</aside>
+
+<section id="home" class="hero">
+<div class="overlay"></div>
+<div class="hero-content">
+<h1>Powering Your Digital & Business Growth</h1>
+<p>Professional Digital, Accounting & Business Solutions</p>
+<div class="hero-buttons">
+<a href="#services" class="btn">Explore Services</a>
+<a href="#contact" class="btn secondary">Contact Us</a>
+</div>
+</div>
+</section>
+
+<section id="services">
+<h2>Our Services</h2>
+<div class="grid">
+<button class="card service-card" data-service="web"><i class="fa-solid fa-globe"></i><span>Web Development</span><small>View details</small></button>
+<button class="card service-card" data-service="accounting"><i class="fa-solid fa-calculator"></i><span>Accounting</span><small>View details</small></button>
+<button class="card service-card" data-service="tax"><i class="fa-solid fa-file-invoice-dollar"></i><span>Tax Filing</span><small>View details</small></button>
+<button class="card service-card" data-service="auditing"><i class="fa-solid fa-magnifying-glass-chart"></i><span>Auditing</span><small>View details</small></button>
+<button class="card service-card" data-service="excel"><i class="fa-solid fa-table"></i><span>Excel Solutions</span><small>View details</small></button>
+<button class="card service-card" data-service="cv"><i class="fa-solid fa-file-lines"></i><span>CV Writing</span><small>View details</small></button>
+<button class="card service-card" data-service="typing"><i class="fa-solid fa-keyboard"></i><span>Typing</span><small>View details</small></button>
+<button class="card service-card" data-service="powerpoint"><i class="fa-solid fa-file-powerpoint"></i><span>PowerPoint</span><small>View details</small></button>
+<button class="card service-card" data-service="design"><i class="fa-solid fa-palette"></i><span>Graphic Design</span><small>View details</small></button>
+<button class="card service-card" data-service="computer"><i class="fa-solid fa-laptop-code"></i><span>Computer Services</span><small>View details</small></button>
+</div>
+</section>
+
+<section id="about">
+<h2>About Innovoltage</h2>
+<div class="about-wrap">
+<div class="about-image"></div>
+<div class="about-text">
+<h3>Who We Are</h3>
+<p>Innovoltage Digital Services delivers technology, accounting and business support solutions for individuals and organizations.</p>
+<h3>Mission</h3>
+<p>Deliver reliable, affordable and innovative services.</p>
+<h3>Vision</h3>
+<p>Become a trusted digital and business partner across Tanzania and beyond.</p>
+</div>
+</div>
+</section>
+
+<section id="contact">
+<h2>Contact Us</h2>
+<form id="contactForm" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+<input name="name" placeholder="Your Name" required>
+<input name="email" type="email" placeholder="Your Email" required>
+<textarea name="message" placeholder="Message" required></textarea>
+<input type="hidden" name="_subject" value="New message from Innovoltage website">
+<button type="submit">Send Message</button>
+<p class="form-status" id="formStatus"></p>
+</form>
+<div class="contact-info">
+<p><i class="fa-solid fa-envelope"></i> jestasinnocent@gmail.com</p>
+<a class="instagram-contact" href="https://www.instagram.com/iam__inno" target="_blank" rel="noopener"><i class="fa-brands fa-instagram"></i> @iam__inno</a>
+<p><i class="fa-solid fa-phone"></i> 0775678082</p>
+<a href="https://wa.me/255775678082" target="_blank" rel="noopener"><i class="fa-brands fa-whatsapp"></i> +255775678082</a>
+</div>
+</section>
+
+<div class="floating-socials" aria-label="Quick contact links">
+<a class="whatsapp-float" href="https://wa.me/255775678082" target="_blank" rel="noopener" aria-label="Chat on WhatsApp"><i class="fa-brands fa-whatsapp"></i><span>WhatsApp</span></a>
+<a class="instagram-float" href="https://www.instagram.com/iam__inno" target="_blank" rel="noopener" aria-label="Open Instagram"><i class="fa-brands fa-instagram"></i><span>Instagram</span></a>
+</div>
+
+<div class="modal" id="serviceModal" aria-hidden="true">
+<div class="modal-content" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+<button class="modal-close" type="button" aria-label="Close service details"><i class="fa-solid fa-xmark"></i></button>
+<div class="modal-icon"><i id="modalIcon" class="fa-solid fa-circle-info"></i></div>
+<h3 id="modalTitle">Service title</h3>
+<p id="modalDescription">Service description</p>
+<div class="price-box">
+<span>Service cost</span>
+<strong id="modalPrice">TSh 0</strong>
+</div>
+<a id="modalWhatsapp" class="btn whatsapp-btn" href="https://wa.me/255775678082" target="_blank" rel="noopener"><i class="fa-brands fa-whatsapp"></i> Order on WhatsApp</a>
+</div>
+</div>
+
+<footer>
+<p>&copy; 2026 Innovoltage Digital Services. All Rights Reserved.</p>
+<p>Powered by <strong>Innocent Mfweje</strong></p>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
